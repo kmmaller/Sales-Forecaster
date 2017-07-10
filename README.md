@@ -1,6 +1,6 @@
-# Adidas Sales Forecasting
+# Sales Forecasting
 ------------------------------
-This module predicts Adidas sales numbers based on the provided data. The data contains time series sales history for a given product defined by an article ID number. The module groups these articles by some shared trait (shoes, tshirts, running, unisex, etc) and averages the data in a given retail week. It then uses this data to predict sales averages in future retail weeks. The basic process is as follows:
+This module predicts sales numbers based on the company data. The data contains time series sales history for a given product defined by an article ID number. The module groups these articles by some shared trait (shoes, tshirts, running, unisex, etc) and averages the data in a given retail week. It then uses this data to predict sales averages in future retail weeks. The basic process is as follows:
   - Filter the dataset on some key value, i.e. take only 'SHOES' data, and average the weekly numbers
   - Calculate historical averages over relevant time frames and combine with other features such as promotional information to train/test forecasting models. Currently a Linear Regression model and a Extreme Gradient Boosted Decision Tree (XGBoost) can be used.
   - Use the models to predict future sales numbers. Adjust non-time related parameters, such as when promotions are occuring, to see how the sales predicitions are affected.
